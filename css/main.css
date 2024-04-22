@@ -4,23 +4,22 @@ html {
   color: #222;
   font-size: 16px;
   scroll-behavior: smooth; 
-  line-height: 1.4;
 }
 
 
 body {
-
   background-color: #ffffff;
   font-size: 1em;
+  font-family: 'Lato', sans-serif;
   text-align: justify;
   color: #031712;
 }
 
-img {
-  background-color: pink;
+a {
+  text-decoration: none;
+  color: #A8446A;
+  background-color: transparent; 
 }
-
-/* Mobile Styles */
 
 
 ul {
@@ -28,29 +27,72 @@ ul {
 }
 
 
-.content-wrapper {
-  width: 90%;
-  margin: 0;
+h1 {
+  font-family: 'Roboto Serif', serif;
 }
 
-
-img { 
-  max-width: 100%;
-}                    
-
-
+h2 {
+  font-family: 'Roboto Serif', serif;
+  font-weight: 700;
+  font-size: 1.875em;
+  color: #A8446A;
+}
 
 p {
   font-size: 1.1em;
   line-height: 1.285em;
 }
 
+.content-wrapper {
+  width: 90%;
+  margin: 50px 0; 
+}
 
 
+img { 
+  max-width: 100%;
+
+}                    
 
 
+/* ----- Base Header - Footer Styles ------*/
+
+header,
+footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: row wrap;
+}
+
+/* -------- Header --------*/
 
 
-/* Tablet Styles */
+header {
+  display: flex;
+  justify-content: center;
+  padding: 15px 0;
 
+}
+
+header .content-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: row wrap;
+  margin: 0;
+}
+
+
+header nav {
+  font-family: 'Roboto Serif', serif;
+  font-weight: 700;
+  text-transform: ;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-flow: ;
+  width: 100%;
+  color: #B73C57;
+}
 
