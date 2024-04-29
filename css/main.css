@@ -96,3 +96,7 @@ header nav {
   color: #B73C57;
 }
 
+#header-name {
+  display: flex;
+  font-size: 1.8em;
+}
