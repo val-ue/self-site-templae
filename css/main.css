@@ -100,3 +100,129 @@ header nav {
   display: flex;
   font-size: 1.8em;
 }
+
+header nav ul li {
+  font-size: 1.125em;
+}
+
+
+/* ------- Footer ------*/
+
+footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+footer .content-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 2em;
+  margin-bottom: 1em;
+}
+
+footer #linkedin-notice {
+  width: 100%;
+  text-align: center;
+  background-color: #FDF1F5;
+}
+
+#linkedin-notice a {
+  text-decoration: underline;  
+} 
+
+footer .copyright {
+  font-family: 'Roboto Serif', serif;
+  font-size: 1.125em;
+  color: #A8446A;
+}
+
+
+
+/* ------------------- Mobile Styles -------------------*/
+
+#intro {
+  display: flex;
+  justify-content: center;
+}
+
+#intro .content-wrapper {
+  display: flex;
+  justify-content: flex-start;
+  align-items: start;
+  flex-direction: row;
+  gap: 5%;
+  width: 90%;
+  background-color: #FDF1F5;
+  margin: 0px;
+}
+
+#intro .name-wrapper {
+  width: 55%;
+}
+
+#intro h1, #intro h2 {
+  font-size: clamp(1em, 1em + 11vw, 13em);
+  color: #A8446A;
+  font-style: italic;
+  margin: 0;
+}
+
+#intro .last {
+  text-align: end;
+}
+
+#intro img {
+  width: 100%;
+  display: block;
+  height: 100%;
+}
+
+#intro .img-container {
+  width: 37%;
+  overflow: hidden; 
+}
+
+#about {
+  display: flex;
+  justify-content: center;
+}
+
+#about .content-wrapper {
+  margin-bottom: 0px;
+}
+
+.body-title {
+  text-align: center;
+  background-color: #FDF1F5;
+}
+
+#companies {
+  display: flex;
+  justify-content: center;
+}
+
+#companies .content-wrapper {
+  margin-bottom: 0px;
+}
+
+#companies ul {
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+
+#companies ul li {
+  display: flex;
+  align-items: center;
+  margin: 28px;
+  width: calc(25% - 10px);
+}
+
+#companies img {
+  height: auto;
+}
