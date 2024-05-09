@@ -39,7 +39,7 @@ h2 {
 }
 
 p {
-  font-size: 1.5em;
+  font-size: 1.55em;
   line-height: 1.285em;
 }
 
@@ -63,6 +63,10 @@ footer {
   justify-content: center;
   align-items: center;
   flex-flow: row wrap;
+}
+
+.img-container {
+  margin: 2em 2em 0em 2em;
 }
 
 /* -------- Header --------*/
