@@ -239,3 +239,60 @@ footer .copyright {
 #companies img {
   height: auto;
 }
+
+
+/* ==================== MEDIA QUERIES =================== */
+
+
+@media only screen and (min-width: 768px) {
+
+
+/*Tablet styles*/
+header nav {
+  flex-flow: row;
+}
+
+header nav ul {
+  flex-flow: row;
+}
+
+header nav ul li {
+  margin-top: 0em;
+
+}
+
+#intro h1, #intro h2 {
+  font-size: clamp(1em, 1em + 11vw, 13em);
+}
+
+#intro .name-wrapper {
+  gap: 2em;
+}
+
+#about p {
+  font-size: 1.3em;
+  text-align: justify;
+}
+
+
+}
+
+
+@media only screen and (min-width: 1200px) {
+
+/*Desktop styles*/
+
+.img-container {
+  margin: 0em 0em 0em 0em;
+}
+
+header nav ul {
+  width: 39%;
+}
+
+header nav ul li {
+  font-size: 1.125em;
+}
+
+
+}
