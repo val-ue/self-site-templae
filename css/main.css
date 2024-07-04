@@ -1,11 +1,10 @@
-/*  General  */
+/* General Styles */
 
 html {
   color: #222;
   font-size: 16px;
   scroll-behavior: smooth; 
 }
-
 
 body {
   background-color: #ffffff;
@@ -18,14 +17,12 @@ body {
 a {
   text-decoration: none;
   color: #A8446A;
-  background-color: transparent; 
+  background-color: transparent; ????????????????????
 }
-
 
 ul {
   list-style-type: none;
 }
-
 
 h1 {
   font-family: 'Roboto Serif', serif;
@@ -37,7 +34,7 @@ h2 {
   font-size: 1.875em;
   color: #A8446A;
 }
-
+ 
 p {
   font-size: 1.55em;
   line-height: 1.285em;
@@ -52,8 +49,11 @@ p {
 img { 
   max-width: 100%;
   min-width: 70%;
-}                    
+}  
 
+.img-container {
+  margin: 2em 2em 0em 2em;
+}
 
 /* ----- Base Header - Footer Styles ------*/
 
@@ -65,12 +65,7 @@ footer {
   flex-flow: row wrap;
 }
 
-.img-container {
-  margin: 2em 2em 0em 2em;
-}
-
 /* -------- Header --------*/
-
 
 header {
   display: flex;
@@ -87,7 +82,6 @@ header .content-wrapper {
   margin: 0;
 }
 
-
 header nav {
   font-family: 'Roboto Serif', serif;
   font-weight: 700;
@@ -98,6 +92,7 @@ header nav {
   flex-flow: ;
   width: 100%;
   color: #B73C57;
+  flex-flow: column;
 }
 
 #header-name {
@@ -108,15 +103,21 @@ header nav {
 header nav ul {
   display: flex;
   justify-content: space-around;
-  width: 100%;
   margin: 0;
   padding: 0;
-  width: 39%;
+  width: 50%;
+  flex-flow: column;
 }
 
 header nav ul li {
-  font-size: 1.125em;
+  font-size: 1.5em;
+  text-align: center;
+  margin-top: 0em;
+  margin-top: 0.5em;
+
 }
+
+
 
 
 /* ------- Footer ------*/
@@ -136,13 +137,13 @@ footer .content-wrapper {
   margin-bottom: 1em;
 }
 
-footer #linkedin-notice {
+footer #notice {
   width: 100%;
   text-align: center;
   background-color: #FDF1F5;
 }
 
-#linkedin-notice a {
+#notice a {
   text-decoration: underline;  
 } 
 
@@ -153,7 +154,6 @@ footer .copyright {
 }
 
 
-
 /* ------------------- Mobile Styles -------------------*/
 
 #intro {
@@ -161,30 +161,33 @@ footer .copyright {
   justify-content: center;
 }
 
+
+.firstpage #intro .content-wrapper {
+  justify-content: flex-start;
+  flex-direction: column;
+}
+
 #intro .content-wrapper {
   display: flex;
-  justify-content: flex-start;
-  align-items: start;
+  align-items: center;
   flex-direction: row;
-  gap: 5%;
   width: 90%;
   background-color: #FDF1F5;
   margin: 0px;
 }
 
 #intro .name-wrapper {
-  width: 55%;
+  display: flex;
+  justify-content: center;
+  gap: 1em;
 }
 
 #intro h1, #intro h2 {
-  font-size: clamp(1em, 1em + 11vw, 13em);
+  font-size: clamp(1em, 1em + 7vw, 13em);
+
   color: #A8446A;
   font-style: italic;
   margin: 0;
-}
-
-#intro .last {
-  text-align: end;
 }
 
 #intro img {
@@ -194,9 +197,9 @@ footer .copyright {
 }
 
 #intro .img-container {
-  width: 37%;
   overflow: hidden; 
 }
+
 
 #about {
   display: flex;
@@ -207,21 +210,25 @@ footer .copyright {
   margin-bottom: 0px;
 }
 
+#about p {
+  text-align: left;
+}
+
 .body-title {
   text-align: center;
   background-color: #FDF1F5;
 }
 
-#companies {
+.companies {
   display: flex;
   justify-content: center;
 }
 
-#companies .content-wrapper {
+.companies .content-wrapper {
   margin-bottom: 0px;
 }
 
-#companies ul {
+.companies ul {
   padding: 0;
   margin: 0;
   display: flex;
@@ -229,17 +236,17 @@ footer .copyright {
   justify-content: space-evenly;
 }
 
-#companies ul li {
+.companies ul li {
   display: flex;
   align-items: center;
+  justify-content: center;
   margin: 28px;
-  width: calc(25% - 10px);
+  width: calc(85% - 10px);
 }
 
-#companies img {
+.companies img {
   height: auto;
 }
-
 
 .press #intro .content-wrapper {
   justify-content: center;
@@ -287,10 +294,18 @@ footer .copyright {
   height: auto;
 }
 
+.publicationlist {
+  display: flex;
+  justify-content: center;
+}
 
+.publicationlist .content-wrapper{
+  margin-bottom: 0;
+}
 
-
-
+.honors ul {
+  padding: 0px;
+}
 
 
 /* ==================== MEDIA QUERIES =================== */
@@ -326,6 +341,9 @@ header nav ul li {
   text-align: justify;
 }
 
+.companies ul li {
+  width: calc(40% - 10px);
+}
 
 }
 
@@ -346,5 +364,40 @@ header nav ul li {
   font-size: 1.125em;
 }
 
+.firstpage #intro .content-wrapper {
+  flex-direction: row;
+}
+
+#intro .content-wrapper {
+  align-items: start;
+  gap: 5%;
+}
+
+.img-container {
+  margin: 0em 0em 0em 0em;
+} 
+
+#intro .name-wrapper {
+  width: 55%;
+  display: block;
+  gap: 0em;
+
+}
+
+#intro .last {
+  text-align: end;
+}
+
+#intro .img-container {
+  width: 37%;
+}
+
+header nav ul li {
+  font-size: 1.125em;
+}
+
+.companies ul li {
+  width: calc(25% - 10px);
+}
 
 }
